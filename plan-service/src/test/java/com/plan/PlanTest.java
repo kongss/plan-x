@@ -15,6 +15,6 @@ public class PlanTest {
     public static void main(String[] args) {
         MessengerVo vo = new MessengerVo();
         vo.setInfo("id","1");
-        System.out.println(service.getPlan(vo));
+        System.out.println(service.queryPlan(vo));
     }
 }

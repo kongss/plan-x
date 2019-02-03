@@ -12,7 +12,27 @@ public class DPlanServiceImpl implements DPlanService {
     @Autowired
     PlanService PlanService;
 
-    public MessengerVo getPlan(MessengerVo messenger) {
-        return PlanService.getPlan(messenger);
+    public MessengerVo queryPlan(MessengerVo messenger) {
+        return PlanService.queryPlan(messenger);
+    }
+
+    public MessengerVo queryPlanList(MessengerVo messenger) {
+        return null;
+    }
+
+    public MessengerVo savePlan(MessengerVo messenger) {
+        return null;
+    }
+
+    public MessengerVo savePlanBatch(MessengerVo messenger) {
+        return null;
+    }
+
+    public MessengerVo updatePlan(MessengerVo messenger) {
+        return null;
+    }
+
+    public MessengerVo deletePlan(MessengerVo messenger) {
+        return null;
     }
 }

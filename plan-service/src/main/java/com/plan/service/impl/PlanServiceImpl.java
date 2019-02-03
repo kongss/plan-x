@@ -13,7 +13,7 @@ public class PlanServiceImpl implements PlanService {
     @Resource
     PlanMapper PlanMapper;
 
-    public MessengerVo getPlan(MessengerVo messenger) {
+    public MessengerVo queryPlan(MessengerVo messenger) {
         String id = messenger.getString("id");
         Plan plan = PlanMapper.selectByPrimaryKey(id);
         messenger.setInfo("plan", plan);

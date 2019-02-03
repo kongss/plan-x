@@ -4,5 +4,5 @@ import com.plan.utils.bean.MessengerVo;
 
 public interface PlanService {
 
-    MessengerVo getPlan(MessengerVo messenger);
+    MessengerVo queryPlan(MessengerVo messenger);
 }
