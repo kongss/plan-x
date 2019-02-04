@@ -1,5 +1,7 @@
 package com.plan.utils.bean;
 
+import com.plan.utils.status.PConstants;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -8,16 +10,16 @@ import java.util.Map;
 public class MessengerVo implements Serializable{
 
     /** 业务参数集合 */
-    private Map<String, Object> map =  null;
+    private Map<String, Object> map;
     /** 响应码 */
-    private String resCode;
+    private String resCode = "0000";
     /** 描述信息 */
-    private String resDesc;
+    private String resDesc = "成功";
     /** 客户端IP */
     private String clientIp;
 
     public MessengerVo(){
-        this.map = new HashMap<String, Object>();
+        this.map = new HashMap<>();
     }
 
     /** 获取map对象 */

@@ -20,11 +20,12 @@ public class PlanServiceImpl implements PlanService {
     PlanMapper PlanMapper;
 
     public MessengerVo queryPlan(MessengerVo messenger) {
+        MessengerVo resVo = new MessengerVo();
         logger.info("通过id查询Plan信息参数:{}", JSON.toJSONString(messenger));
         String id = messenger.getString("id");
         Plan plan = PlanMapper.selectByPrimaryKey(id);
-        messenger.setInfo("plan", plan);
-        logger.info("通过id查询Plan信息结果:{}", JSON.toJSONString(messenger));
-        return messenger;
+        resVo.setInfo("plan", plan);
+        logger.info("通过id查询Plan信息结果:{}", JSON.toJSONString(resVo));
+        return resVo;
     }
 }
