@@ -1,7 +1,5 @@
 package com.plan.utils.bean;
 
-import com.plan.utils.status.PConstants;
-
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -10,7 +8,7 @@ import java.util.Map;
 public class MessengerVo implements Serializable{
 
     /** 业务参数集合 */
-    private Map<String, Object> map;
+    private Map<String, Object> messenger;
     /** 响应码 */
     private String resCode = "0000";
     /** 描述信息 */
@@ -19,12 +17,12 @@ public class MessengerVo implements Serializable{
     private String clientIp;
 
     public MessengerVo(){
-        this.map = new HashMap<>();
+        this.messenger = new HashMap<>();
     }
 
-    /** 获取map对象 */
+    /** 获取map对象(messenger) */
     public String getString(String key){
-        Object obj = map.get(key) == null ? "" : map.get(key);
+        Object obj = messenger.get(key) == null ? "" : messenger.get(key);
         if (obj != null){
             if (obj.getClass().getSimpleName().equals("BigDecimal")){
                 return ((BigDecimal)obj).toPlainString();
@@ -34,20 +32,20 @@ public class MessengerVo implements Serializable{
     }
 
     public void clear(){
-        map.clear();
+        messenger.clear();
     }
 
-    public Map<String, Object> getMap() {
-        return map;
+    public Map<String, Object> getMessenger() {
+        return messenger;
     }
 
-    public void setMap(Map<String, Object> map) {
-        this.map = map;
+    public void setMessenger(Map<String, Object> messenger) {
+        this.messenger = messenger;
     }
 
     /** put业务参数 */
     public void setInfo(String key, Object value) {
-        map.put(key, value);
+        messenger.put(key, value);
     }
 
     public String getResCode() {
@@ -77,7 +75,7 @@ public class MessengerVo implements Serializable{
     @Override
     public String toString() {
         return "MessengerVo{" +
-                "map=" + map +
+                "messenger=" + messenger +
                 ", resCode='" + resCode + '\'' +
                 ", resDesc='" + resDesc + '\'' +
                 ", clientIp='" + clientIp + '\'' +

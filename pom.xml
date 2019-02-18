@@ -20,7 +20,7 @@
   <url>http://www.example.com</url>
 
   <properties>
-    <dubbo_version>2.5.7</dubbo_version>
+    <dubbo_version>2.6.5</dubbo_version>
     <!-- Common libs -->
     <spring_version>4.3.10.RELEASE</spring_version>
     <mybatis_version>3.2.6</mybatis_version>

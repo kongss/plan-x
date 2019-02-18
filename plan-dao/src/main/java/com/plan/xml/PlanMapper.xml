@@ -170,4 +170,10 @@
       founder = #{founder,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+  <select id="getPlanList" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+    SELECT
+        id, title, synopsis, begin_time, end_time, status, insert_time, update_time, founder
+    FROM
+      x_plan
+  </select>
 </mapper>
