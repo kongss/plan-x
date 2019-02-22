@@ -6,13 +6,16 @@ import com.plan.utils.bean.MessengerVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * 系统交互逻辑处理
+ */
 public class DPlanServiceImpl implements DPlanService {
 
     @Autowired
-    PlanService PlanService;
+    PlanService planService;
 
     public MessengerVo queryPlan(MessengerVo messenger) {
-        return PlanService.queryPlan(messenger);
+        return planService.queryPlan(messenger);
     }
 
     public MessengerVo queryPlanList(MessengerVo messenger) {
@@ -20,7 +23,7 @@ public class DPlanServiceImpl implements DPlanService {
     }
 
     public MessengerVo savePlan(MessengerVo messenger) {
-        return null;
+        return planService.savePlan(messenger);
     }
 
     public MessengerVo savePlanBatch(MessengerVo messenger) {
