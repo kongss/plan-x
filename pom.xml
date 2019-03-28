@@ -20,6 +20,7 @@
   <url>http://www.example.com</url>
 
   <properties>
+    <commons_lang3_version>3.6</commons_lang3_version>
     <dubbo_version>2.6.5</dubbo_version>
     <!-- Common libs -->
     <spring_version>4.3.10.RELEASE</spring_version>
@@ -92,6 +93,11 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons_lang3_version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-framework-bom</artifactId>
         <version>${spring_version}</version>
@@ -125,6 +131,11 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aspects</artifactId>
+        <version>${spring_version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
         <version>${spring_version}</version>
       </dependency>
       <dependency>
