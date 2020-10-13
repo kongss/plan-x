@@ -69,7 +69,7 @@
     <!-- 模板引擎:thymeleaf -->
     <thymeleaf-version>2.0.16</thymeleaf-version>
     <!-- Test libs -->
-    <junit_version>4.12</junit_version>
+    <junit_version>4.13.1</junit_version>
     <easymock_version>3.4</easymock_version>
     <jmockit_version>1.33</jmockit_version>
     <commons_version>3.4</commons_version>
