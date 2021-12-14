@@ -64,7 +64,7 @@
     <jcl_version>1.2</jcl_version>
     <log4j_version>1.2.16</log4j_version>
     <logback_version>1.2.2</logback_version>
-    <log4j2-version>2.8.2</log4j2-version>
+    <log4j2-version>2.16.0</log4j2-version>
     <aspectj-version>1.5.0</aspectj-version>
     <!-- 模板引擎:thymeleaf -->
     <thymeleaf-version>2.0.16</thymeleaf-version>
