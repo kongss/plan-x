@@ -21,7 +21,7 @@
 
   <properties>
     <commons_lang3_version>3.6</commons_lang3_version>
-    <dubbo_version>2.6.5</dubbo_version>
+    <dubbo_version>2.6.12</dubbo_version>
     <!-- Common libs -->
     <spring_version>4.3.10.RELEASE</spring_version>
     <mybatis_version>3.2.6</mybatis_version>
