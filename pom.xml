@@ -25,7 +25,7 @@
     <!-- Common libs -->
     <spring_version>4.3.10.RELEASE</spring_version>
     <mybatis_version>3.2.6</mybatis_version>
-    <mysql_version>5.1.6</mysql_version>
+    <mysql_version>8.0.28</mysql_version>
     <mybatis_spring_version>1.2.2</mybatis_spring_version>
     <aspectj_version>1.5.3</aspectj_version>
     <javassist_version>3.20.0-GA</javassist_version>
